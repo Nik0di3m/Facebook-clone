@@ -24,3 +24,16 @@
     display: flex;
     flex-direction: column;
 }
+
+@media only screen and (max-width: 768px){
+
+    .login{
+        max-width: 100vw;
+    }
+    .login > div{
+        width: 100%;
+    }
+    .login > div > img{
+        width: 100%;
+    }
+}

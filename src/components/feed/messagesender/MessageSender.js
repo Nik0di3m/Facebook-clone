@@ -4,6 +4,7 @@ import "./MessageSender.css"
 import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
+import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 import { useStateValue } from '../../../StateProvider';
 import db from '../../../firebase';
 import firebase from "firebase"
@@ -50,8 +51,9 @@ const MessageSender = () => {
                         value={imageUrl}
                         onChange={(e) => setImageUrl(e.target.value)}
                     />
+
                     <button onClick={handleSubmit} type="submit">
-                        Hidden submit
+                        <SendOutlinedIcon />
                     </button>
                 </form>
             </div>
