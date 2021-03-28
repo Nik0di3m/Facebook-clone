@@ -26,7 +26,9 @@ const Post = ({ profilePic, image, username, timestamp, message }) => {
                 <p>{message}</p>
             </div>
             <div className="post__image">
-                <img src={image} alt="" />
+                {image &&
+                    <img src={image} alt="" />
+                }
             </div>
             <div className="post__options">
                 <div className="post__option">
